@@ -224,9 +224,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val layoutManager = LinearLayoutManager(this)
-        rv_log.layoutManager = layoutManager
-        rv_log.addItemDecoration(DividerItemDecoration(this, layoutManager.orientation))
+       // rv_log.addItemDecoration(DividerItemDecoration(this, layoutManager.orientation))
         rv_log.adapter = logAdapter
         btn_scan.setOnClickListener {
             checkPermissions()
